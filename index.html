@@ -8,230 +8,9 @@
     <!-- Favicon -->
     <link rel="icon" href="Logo.jpg" type="image/jpg">
 
-    <!-- Embedded CSS -->
-    <style>
-        /* General Styles */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Open Sans', sans-serif;
-        }
 
-        /* Body Styles */
-        body {
-            background-color: beige;
-            color: black;
-        }
-
-        /* Header Styles */
-        header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background-color: black;
-            padding: 20px;
-        }
-
-        header .logo img {
-            max-width: 100px;
-        }
-
-        nav ul {
-            list-style: none;
-            display: flex;
-            gap: 20px;
-        }
-
-        nav ul li a {
-            color: white;
-            text-decoration: none;
-            font-size: 18px;
-        }
-
-        /* Hero Section */
-        .hero {
-            text-align: center;
-            padding: 50px;
-            background: url('https://www.shutterstock.com/image-photo/brown-roasted-coffee-beans-closeup-600nw-1925210999.jpg') center/cover;
-            color: white;
-        }
-
-        .hero h1 {
-            font-size: 3em;
-        }
-
-        .hero .cta-button {
-            display: inline-block;
-            background-color: orange;
-            color: white;
-            padding: 10px 20px;
-            border-radius: 5px;
-            text-decoration: none;
-            margin-top: 20px;
-        }
-
-        .hero .cta-button:hover {
-            background-color: red;
-        }
-
-        /* Menu Section */
-        .menu {
-            padding: 50px;
-            background-color: beige;
-        }
-
-        .menu h2 {
-            text-align: center;
-            font-size: 2.5em;
-            margin-bottom: 30px;
-        }
-
-        .menu-items {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 20px;
-        }
-
-        .menu-card {
-            background-color: peachpuff;
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-            text-align: center;
-            padding: 20px;
-            transition: transform 0.3s;
-        }
-
-        .menu-card:hover {
-            transform: scale(1.05);
-        }
-
-        .menu-card img {
-            width: 100%;
-            border-radius: 8px;
-            height: 200px;
-            object-fit: cover;
-        }
-
-        .menu-card h3 {
-            font-size: 1.5em;
-            margin-top: 15px;
-        }
-
-        .menu-card span {
-            font-size: 1.2em;
-            color: blue;
-            margin-top: 10px;
-        }
-
-        /* About Us Section */
-        .about {
-            padding: 50px;
-            background-color: white;
-            text-align: center;
-        }
-
-        /* Contact Section */
-        .contact {
-            padding: 50px;
-            background-color: peachpuff;
-            text-align: center;
-        }
-
-        .contact input, .contact textarea {
-            width: 80%;
-            padding: 10px;
-            border: 1px solid gray;
-            border-radius: 5px;
-            font-size: 16px;
-        }
-
-        .contact button {
-            background-color: orange;
-            color: white;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px;
-        }
-
-        .contact button:hover {
-            background-color: red;
-        }
-
-        /* Make navigation responsive */
-        @media (max-width: 768px) {
-            header {
-                flex-direction: column;
-                text-align: center;
-            }
-
-            nav ul {
-                flex-direction: column;
-                gap: 10px;
-                padding: 10px 0;
-            }
-        }
-
-        /* Hero Section Optimization */
-        @media (max-width: 768px) {
-            .hero {
-                padding: 30px;
-                min-height: 50vh;
-            }
-
-            .hero h1 {
-                font-size: 2em;
-            }
-
-            .hero .cta-button {
-                padding: 8px 15px;
-                font-size: 14px;
-            }
-        }
-
-        /* Responsive Menu Items */
-        @media (max-width: 768px) {
-            .menu-items {
-                display: grid;
-                grid-template-columns: 1fr; /* Single column layout */
-                gap: 15px;
-            }
-
-            .menu-card {
-                width: 90%;
-                margin: auto;
-            }
-        }
-
-        /* Contact Form Optimization */
-        @media (max-width: 768px) {
-            .contact form {
-                width: 90%;
-                max-width: 400px;
-                margin: auto;
-            }
-
-            .contact input, 
-            .contact textarea {
-                width: 100%;
-            }
-        }
-
-        /* Footer */
-        footer {
-            text-align: center;
-            background-color: black;
-            color: white;
-            padding: 10px;
-        }
-
-        /* Footer for small screens */
-        @media (max-width: 768px) {
-            footer {
-                font-size: 14px;
-            }
-        }
-    </style>
+    <!-- External CSS File -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     
@@ -307,4 +86,224 @@
     </footer>
 
 </body>
-</html>
+</html> /* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Body Styles */
+body {
+    background-color: beige;
+    color: black;
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    padding: 20px;
+}
+
+header .logo img {
+    max-width: 100px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 50px;
+    background: url('https://www.shutterstock.com/image-photo/brown-roasted-coffee-beans-closeup-600nw-1925210999.jpg') center/cover;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 3em;
+}
+
+.hero .cta-button {
+    display: inline-block;
+    background-color: orange;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+.hero .cta-button:hover {
+    background-color: red;
+}
+
+/* Menu Section */
+.menu {
+    padding: 50px;
+    background-color: beige;
+}
+
+.menu h2 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+.menu-items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.menu-card {
+    background-color: peachpuff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s;
+}
+
+.menu-card:hover {
+    transform: scale(1.05);
+}
+
+.menu-card img {
+    width: 100%;
+    border-radius: 8px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.menu-card h3 {
+    font-size: 1.5em;
+    margin-top: 15px;
+}
+
+.menu-card span {
+    font-size: 1.2em;
+    color: blue;
+    margin-top: 10px;
+}
+
+/* About Us Section */
+.about {
+    padding: 50px;
+    background-color: white;
+    text-align: center;
+}
+
+/* Contact Section */
+.contact {
+    padding: 50px;
+    background-color: peachpuff;
+    text-align: center;
+}
+
+.contact input, .contact textarea {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.contact button {
+    background-color: orange;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+}
+
+.contact button:hover {
+    background-color: red;
+}
+/* Make navigation responsive */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px 0;
+    }
+}
+
+/* Hero Section Optimization */
+@media (max-width: 768px) {
+    .hero {
+        padding: 30px;
+        min-height: 50vh;
+    }
+
+    .hero h1 {
+        font-size: 2em;
+    }
+
+    .hero .cta-button {
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+}
+
+/* Responsive Menu Items */
+@media (max-width: 768px) {
+    .menu-items {
+        display: grid;
+        grid-template-columns: 1fr; /* Single column layout */
+        gap: 15px;
+    }
+
+    .menu-card {
+        width: 90%;
+        margin: auto;
+    }
+}
+
+/* Contact Form Optimization */
+@media (max-width: 768px) {
+    .contact form {
+        width: 90%;
+        max-width: 400px;
+        margin: auto;
+    }
+
+    .contact input, 
+    .contact textarea {
+        width: 100%;
+    }
+}
+
+/* Footer */
+@media (max-width: 768px) {
+    footer {
+        font-size: 14px;
+    }
+}
+
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 10px;
+} 
